@@ -1,0 +1,118 @@
+/* 小米闪购 */
+.phone-title h3{
+    width:200px;
+    height: 60px;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 60px;
+    color: #333;
+}
+.phone-arrow{
+    height: 25px;
+    margin-top: 30px;
+}
+.phone-arrow span{
+    float: left;
+    width: 36px;
+    height: 25px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+.phone-arrow span:hover{
+    color: #ff6700;
+}
+.con-banner-img{
+    height: 120px;
+    margin:32px 0 20px;
+}
+/* 手机 */
+.phonr-all span:first-child{
+    font-size: 18px;
+    line-height: 60px;
+    vertical-align: middle;
+}
+.phonr-all span:last-child{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    font-size: 16px;
+    color: #fff;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 20px;
+}
+.phonr-all:hover{
+   color: #ff6700;
+}
+.phonr-all:hover span:last-child{
+    background-color: #ff6700;
+}
+/* 家电 */
+.electric-all span{
+    font-weight: 500;
+    line-height: 55px;
+    padding-bottom: 5px;
+}
+.electric-all span:first-child{
+    margin-right: 30px;
+}
+.electric-all span:hover{
+    color: #ff6700;
+    border-bottom: 2px solid #ff6700;
+}
+/* 视频 */
+.cont-video .video-list{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 1226px;
+}
+.cont-video .video-list li{
+    width: 296px;
+    height: 285px;
+    background-color: #fff;
+}
+.video-con{
+    position: relative;
+}
+.video-con .play{
+    position: absolute;
+    left: 20px;
+    top: 140px;
+    width: 35px;
+    height: 24px;
+    border: 2px solid #fff;
+    border-radius: 14px;
+}
+.video-con .play::before{
+    display: block;
+    position: absolute;
+    content: "";
+    left: 50%;
+    top:50%;
+    width: 0;
+    height: 0;
+    margin-top: -6px;
+    margin-left: -2px;
+    border:6px solid transparent;
+    border-left-color:#fff ;
+}
+.video-con:hover .play{
+    background-color: #ff6700;
+    border: #ff6700;
+}
+.video-img{
+    margin-bottom: 28px;
+}
+.video-list li h3{
+    font-weight: normal;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.video-list li:hover{
+    box-shadow: 0 0 10px solid;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,107 @@
+#topbar{
+    height: 40px;
+    line-height: 40px;
+    background-color: #333;
+}
+/* topbar-navlist */
+.topbar-navlist{
+    height: 40px;
+}
+.topbar-navlist li{
+    float: left;
+}
+.topbar-navlist li a{
+    color: #b0b0b0;
+    padding:0 8px;
+    border-right: 1px solid #424242;
+}
+.topbar-navlist li:first-child a{
+    padding-left: 0;
+}
+.topbar-navlist li:last-child a{
+    padding-right: 0;
+    border-right: none;
+}
+.topbar-navlist li a:hover{
+    color:#fff;
+}
+/* 下载app */
+#topbar .download{
+    top:40px;
+    left:-28px;
+    width:126px;
+    /* height:150px; */
+    height: 0;
+    overflow: hidden;
+    font-size: 14px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 3px #c0c0c0;
+    transition: 0.3s;
+    z-index: 99;
+}
+#topbar li.icons::after{
+    content: "";
+    position: absolute;
+    top:30px;
+    left:20px;
+    border:10px solid transparent;
+    border-bottom-color:#fff;
+    border-top: none;
+    opacity: 0;
+}
+#topbar .download img{
+    display: block;
+    width:90px;
+    margin: 20px auto 0;
+}
+#topbar li.icons:hover::after{
+    opacity:1; 
+}
+#topbar li:hover .download{
+    height: 150px;
+}
+/* topbar-use */
+.topbar-use li{
+    float: left;
+}
+.topbar-use li>a{
+    color: #b0b0b0;
+    font-size: 12px;
+    padding: 0 8px;
+}
+.topbar-use li.shop{
+    margin-left: 20px;
+    height: 40px;
+}
+.topbar-use li.shop>a{
+    display: block;
+    height: 100%;
+    width: 120px;
+    text-align: center;
+    background-color: #424242;
+}
+.topbar-use li.shop>a>i{
+    margin-right: 5px;
+}
+.shop-car{
+    top:40px;
+    right:0;
+    width:316px;
+    height: 0;
+    font-size: 12px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 100px;
+    background-color: white;
+    box-shadow: 0 0 3px #ccc;
+    transition: .3s;
+    z-index: 33;
+}
+.topbar-use .shop>a:hover{
+    color:#ff6700;
+    background-color: #fff;
+}
+.topbar-use .shop:hover .shop-car{
+    height: 100px;
+}
